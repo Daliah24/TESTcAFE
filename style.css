@@ -326,7 +326,7 @@ h3{
 }
 
 
-@media (max-width:1200px) {
+@media (max-width:1190px) {
   header {
       padding: 18px 7%;
   }
@@ -376,7 +376,7 @@ header .navbar{
  .navbar a {
   padding: 1.5rem;
   display: block;
-  color: var(--second-color);
+  color: var(--main-color);
  }
  .home-text span
  {
