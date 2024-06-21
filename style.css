@@ -285,6 +285,7 @@ h3{
   display: flex;
   flex-direction:column ;
   align-items: center;
+  color: var(--fifth-color);
 }
 
 .box .stars .bx {
@@ -307,7 +308,7 @@ h3{
   border-radius: 50%;
 }
 .social a .bx:hover {
-  background: var(--third-color);
+  background: var(--second-color);
 }
 .links{
   margin: 1rem 0 1rem;
@@ -315,11 +316,11 @@ h3{
 .links a{
   font-size: 1rem;
   font-weight: 500;
-  color: var(--main-color);
+  color: var(--fourth-color);
   padding: 1rem;
 }
 .links a:hover{
-  color: var(--main-color);
+  color: var(--second-color);
 }
 .contact p{
   text-align: center;
@@ -486,5 +487,9 @@ header .navbar{
   #menu-icon {
     font-size: 26px; /* Largest font size for extra large screens */
   }
+}
+.about{
+  overflow: hidden;
+  object-fit: contain;
 }
 }
