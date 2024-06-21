@@ -6,3 +6,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
       nav.classList.toggle('open');
   });
 });
+
