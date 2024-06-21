@@ -451,7 +451,7 @@ header .navbar{
   font-size: 24px; /* Base font size */
   cursor: pointer;
   z-index: 1001;
-  display: none; /* Adjust this as needed based on JavaScript or other conditions */
+  display: initial; /* Adjust this as needed based on JavaScript or other conditions */
 }
 
 /* Very small devices (phones, 600px and down) */
