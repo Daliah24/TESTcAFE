@@ -314,7 +314,7 @@ h3{
 .links a{
   font-size: 1rem;
   font-weight: 500;
-  color: var(--second color);
+  color: var(--main-color);
   padding: 1rem;
 }
 .links a:hover{
@@ -326,13 +326,13 @@ h3{
 }
 
 
-@media (max-width:1150px) {
+@media (max-width:1200px) {
   header {
       padding: 18px 7%;
   }
    section{
   padding: 50px 7%;
-  background-color: var(--second-color);
+  background-color: var(--main-color);
  }
  .home-text h1 {
   font-size: 3rem;
@@ -341,13 +341,13 @@ h3{
   font-size: 1.5rem;
  }
 }
-@media (max-width:991px) {
+@media (max-width:992px) {
   header {
       padding: 18px 4%;
   }
    section{
   padding: 50px 4%;
-  background-color: var(--second-color);
+  background-color: var(--main-color);
  }
 }
 @media (max-width:768px) {
