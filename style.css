@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
-
+.filler{
+  background-color: #1C0A00;
+}
 *{
  margin:0;
  padding:0;
@@ -18,7 +20,6 @@
   --third-color:#FFE3B3;
   --fourth-color:#FFE3D3;
   --fifth-color:#CDBBA7;
-
 
 }
 section{
@@ -60,7 +61,7 @@ header{
 h3{
   font-weight: bolder;
   font-size: larger;
-  width: 610px;
+  width: 100%;
   
   align-items: center;
 
@@ -342,8 +343,20 @@ h3{
  }
 }
 @media (max-width:992px) {
+  .kape2img{
+    height:fit-content;
+    object-fit: contain;
+    height: 200rem;
+    overflow: hidden;
+  }
   header {
       padding: 18px 4%;
+  }
+  .home{
+    flex-direction: column;
+    height: 100vh;
+    gap: 0;
+    overflow: hidden;
   }
    section{
   padding: 50px 4%;
@@ -390,6 +403,26 @@ header .navbar{
  }
 }
 @media (max-width:768px) {
+  .navbar{
+    transform: translateY(-100%);
+    position: absolute;
+    top: 3.2rem;
+    left: 0;
+    height: calc(100vh - 8rem);
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    background-color: #fff;
+    z-index: 1;
+}
+.navbar.open{
+  transform: translateY(0);
+  clip-path: circle(1000px at 90% -10%);
+  pointer-events: all;
+  padding-top: 10px;
+}
   .home-text {
       padding-top: inherit;
   }
