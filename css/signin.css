@@ -480,4 +480,8 @@ font-size: 1.2rem;
     object-fit:contain ;
 
   }
+  #password, #username{
+    width: 100%;
+  } 
 }
+
