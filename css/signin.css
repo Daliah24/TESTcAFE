@@ -459,10 +459,8 @@ font-size: 1.2rem;
   color:var(--fifth-color);
   flex-direction: column;
   float: right;
-  top: 15rem;
   bottom: 10px;
   position: relative;
-  height: 100px;
   padding-right: 5rem;
 }
 
@@ -473,15 +471,50 @@ font-size: 1.2rem;
 #signInBtn{
   flex-direction: column;
 }
-
+#logo{
+  object-fit: contain;
+  height: 30vh;
+  display: block;
+  flex-direction: column;
+  top: 20%;
+  position: relative;
+}
 @media (max-width: 480px){
   #signInBtn{
     flex-direction: column;
     object-fit:contain ;
-
   }
   #password, #username{
     width: 100%;
-  } 
+  }
+  #logo{
+    display: none;
+  }
 }
 
+@media (max-width: 1200px){
+  #logo{
+    height: 20%;
+    flex-direction: column;
+    width: 20%;
+    float: inline-start;
+  }
+  .signInForm{
+    display: block;
+    color:var(--fifth-color);
+    flex-direction: column;
+    float: right;
+    bottom: 10px;
+    position: relative;
+    padding-right: 5rem;
+    top: 20vh;
+  }
+}
+@media (max-width: 800px){
+  #logo{
+    height: 20%;
+    flex-direction: column;
+    width: 20%;
+    float: inline-start;
+  }
+}
