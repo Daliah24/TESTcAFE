@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 //Second Rate Shaboingery
-function areYouSure(){
+function areYouSure(url){
   let i = 'Are You Sure?'
   if (confirm(i)){
-    window.open('https://www.youtube.com/watch?v=QwLvrnlfdNo', '_blank').focus();
+    window.open(url, '_blank').focus();
   }
   else{
     alert('Okay! :D');

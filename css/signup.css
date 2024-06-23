@@ -525,6 +525,13 @@ header .navbar{
     height: 20vh;
     object-fit: contain;
   }
+  
 }
 
-
+@media (max-width: 900px){
+  #signUpBase{
+    margin-top: 10vh;
+    object-fit: contain;
+    overflow: hidden;
+  }
+}

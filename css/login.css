@@ -488,7 +488,7 @@ header .navbar{
   }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1280px){
   #logo{
     height: 20vh;
     flex-direction: column;
@@ -507,5 +507,11 @@ header .navbar{
     height: 20vh;
     object-fit: contain;
   }
+  #login{
+    
+    height: 85vh;
+  }
+  #lognBase{
+    margin-top: 10vh;
+  }
 }
-
