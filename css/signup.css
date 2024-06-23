@@ -19,15 +19,15 @@
   --fourth-color:#FFE3D3;
   --fifth-color:#CDBBA7;
 
-
 }
 section{
   padding: 50px 10%;
   background-color: #1C0A00;
 
 }
-*::selection{
-  color: var(--fifth-color);
+*::selection
+{
+  color: #fff;
   background: var(--fifth-color);}
 img{
   width: 100%;
@@ -38,13 +38,13 @@ header{
   width: 100%;
   top: 0;
   right:0;
-  z-index: 1000;
+  z-index: 1000;  
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #65451F;
   box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
-  padding: 15px 10%;
+  padding: 10px 5%;
   transition: 0.2s;
 }
 .logo{
@@ -59,7 +59,7 @@ header{
 h3{
   font-weight: bolder;
   font-size: larger;
-  width: 610px;
+  width: 100%;
   
   align-items: center;
 
@@ -82,13 +82,14 @@ h3{
   color:var(--fifth-color);
 }
 
-#menu-icon{
-  font-size: 24px;
+#menu-icon {
+  font-size: 24px; /* Base font size */
   cursor: pointer;
   z-index: 1001;
-  display: none;
-
+  display: none; /* Adjust this as needed based on JavaScript or other conditions */
 }
+
+
 .home{
     width: 100%;
     min-height: 100vh;
@@ -171,14 +172,11 @@ h3{
   text-transform: uppercase;
 }
 
-.heading span{
-   font-size: 2rem;
-   font-weight: 600;
-   color: var(--third-color);
-}
+
 .heading h1{
-  font-size: 3rem;
-  color: var(--main-color);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--second-color);
 }
 .shop-container{
   display:flex;
@@ -186,80 +184,6 @@ h3{
   gap: 2rem;
   margin-top: 1rem;
 }
-
-
-
-.shop-container .box{
-  flex: 1 1 10rem;
-  background:var(--second-color);
-  padding: 20px;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 3rem;
-  border-radius: 0.5rem;
-}
-.shop-container .box .box-img{
-  width: 200px;
-  height: 150px;
-  margin-top: -100px;
-}
-.shop-container .box .box-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-}
-.star{
-  margin:1rem 0 0.1rem;
-}
-.shop-container .box .star .bx{
-  color: var(--second-color);
-}
-.shop-container .box h2{
-  color: #ebdbc7;
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin: 0.2rem 0 0.5rem;
-}
-.box .btn{
-  border: 2px solid #ebdbc8;
-  color: #ebdbc8;
-}
-.box .btn:hover{
-  background: #ebdbc8;
-  color:var(--second-color)
-}
-
-
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-.delivery-image,
-.app-img{
-  flex: 1 1 29rem;
-  
-}
-.delivery-text,
-.app-text{
-  flex: 1 1 21rem;
-}
-.delivery-text h2,
-.app-text h2{
-  font-size: 1.2rem;
-  color: var(--fifth-color);
-}
-.delivery-text p,
-.app-text p {
-  margin: 0.5rem 0 1rem;
-  text-align: justify;
-  color:var(--fourth-color)
-}
-
 
 .about{
   display: flex;
@@ -285,6 +209,7 @@ h3{
   display: flex;
   flex-direction:column ;
   align-items: center;
+  color: var(--fifth-color);
 }
 
 .box .stars .bx {
@@ -302,12 +227,12 @@ h3{
 }
 .social a .bx{
   padding: 5px;
-  color:#fff;
-  background: #000000;
+  color:var(--main-color);
+  background: var(--fourth-color);
   border-radius: 50%;
 }
 .social a .bx:hover {
-  background: var(--main-color);
+  background: var(--second-color);
 }
 .links{
   margin: 1rem 0 1rem;
@@ -315,22 +240,25 @@ h3{
 .links a{
   font-size: 1rem;
   font-weight: 500;
-  color: var(--second color);
+  color: var(--fourth-color);
   padding: 1rem;
 }
 .links a:hover{
-  color: var(--main-color);
+  color: var(--second-color);
 }
 .contact p{
   text-align: center;
+  color: var(--fourth-color)
 }
-@media (max-width:1150px) {
+
+
+@media (max-width:1190px) {
   header {
       padding: 18px 7%;
   }
    section{
   padding: 50px 7%;
-  background-color: #1C0A00;
+  background-color: var(--main-color);
  }
  .home-text h1 {
   font-size: 3rem;
@@ -339,13 +267,25 @@ h3{
   font-size: 1.5rem;
  }
 }
-@media (max-width:991px) {
+@media (max-width:992px) {
+  .kape2img{
+    height:fit-content;
+    object-fit: contain;
+    height: 200rem;
+    overflow: hidden;
+  }
   header {
       padding: 18px 4%;
   }
+  .home{
+    flex-direction: column;
+    height: 100vh;
+    gap: 0;
+    overflow: hidden;
+  }
    section{
   padding: 50px 4%;
-  background-color: #1C0A00;
+  background-color: var(--main-color);
  }
 }
 @media (max-width:768px) {
@@ -374,7 +314,7 @@ header .navbar{
  .navbar a {
   padding: 1.5rem;
   display: block;
-  color: var(--second-color);
+  color: var(--main-color);
  }
  .home-text span
  {
@@ -388,6 +328,26 @@ header .navbar{
  }
 }
 @media (max-width:768px) {
+  .navbar{
+    transform: translateY(-100%);
+    position: absolute;
+    top: 3.2rem;
+    left: 0;
+    height: calc(100vh - 8rem);
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    background-color: #fff;
+    z-index: 1;
+}
+.navbar.open{
+  transform: translateY(0);
+  clip-path: circle(1000px at 90% -10%);
+  pointer-events: all;
+  padding-top: 10px;
+}
   .home-text {
       padding-top: inherit;
   }
@@ -410,83 +370,131 @@ header .navbar{
   header {
     padding: 11px 4%;
 }
+
 #menu-icon {
-display: initial;
-}
-header .navbar{
-position: absolute;
-top: 100%;
-left: 0;
-right: 0;
-display: flex;
-flex-direction: column;
-background: #fff;
-box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
-border-top: 2px solid var(--main-color);
-transition: 0.2s;
-text-align: left;
-}
-.navbar.active{
-top: 100%;
-}
-.navbar a {
-padding: 1.5rem;
-display: block;
-color: var(--second-color);
-}
-.home-text span
-{
- font-size: 0.9rem;
-}
-.home-text h1{
- font-size: 2.4rem;
-}
-.home-text h2{
-font-size: 1.2rem;
+  font-size: 24px; /* Base font size */
+  cursor: pointer;
+  z-index: 1001;
+  display: initial; /* Adjust this as needed based on JavaScript or other conditions */
 }
 }
-@media (max-width: 364px) {
-  .links {
-      display: flex;
-      flex-direction: column;
+
+/* Very small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #menu-icon {
+    font-size: 18px; /* Smaller font size for small screens */
   }
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  #menu-icon {
+    font-size: 20px; /* Slightly larger font size */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #menu-icon {
+    font-size: 22px; /* Larger font size for medium screens */
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #menu-icon {
+    font-size: 24px; /* Even larger font size for large screens */
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #menu-icon {
+    font-size: 26px; /* Largest font size for extra large screens */
+  }
+}
+.about{
+  overflow: hidden;
+  object-fit: contain;
+}
+
+
+
 
 /*Ferry Code Starts here*/
-.signInForm{
-  display: block;
-  color:var(--fifth-color);
-  flex-direction: column;
-  position: relative;
-  object-fit: contain;
-  position: relative;
+/* CSS for centering and styling the sign-up form */
 
+#signUp- {
+    padding-top: 14.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#signUpBase {
+  margin-top: auto;
+  width: 100%; /* Adjust based on preference */
+  max-width: 400px; /* Maximum width */
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 8px; /* Rounded corners */
 }
 
-#sign-in{
-  height: 100vh;
-  width: 100vw;
+#signUpSize {
+    max-width: 400px; /* Maximum width of the form */
+    margin: auto; /* Center in the available space */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the form */
 }
-#signInBtn{
-  flex-direction: column;
-}
-#logo{
-    height: 20vh;
+
+.signUpForm {
+    display: flex;
     flex-direction: column;
-    width: 20%;
-    top:50rem;
-    left: 40%;
-    object-fit: contain;
 }
-#signInBase{
-  height: 50vh;
-  align-items: center;
-  justify-content: center;
-  margin-left: 30%;
+
+.signUpForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
+
+.signUpForm label {
+    margin-bottom: 5px;
+}
+
+.signUpForm input[type="text"],
+.signUpForm input[type="age"],
+.signUpForm input[type="birthDate"],
+.signUpForm input[type="password"],
+.signUpForm input[type="passwordConfirm"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Space between inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+#signUpBtn {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#signUpBtn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.signUpForm p {
+    text-align: center;
+}
+
+
+
 @media (max-width: 480px){
-  #signInBtn{
+  #logInBtn{
     flex-direction: column;
     object-fit:contain ;
   }
@@ -518,3 +526,4 @@ font-size: 1.2rem;
     object-fit: contain;
   }
 }
+
