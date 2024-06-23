@@ -497,7 +497,13 @@ header .navbar{
     left: 40%;
     object-fit: contain;
   }
-  
+  #login{
+    
+    height: 85vh;
+  }
+  #lognBase{
+    margin-top: 10vh;
+  }
 }
 @media (max-width: 800px){
   #logo{
@@ -507,11 +513,5 @@ header .navbar{
     height: 20vh;
     object-fit: contain;
   }
-  #login{
-    
-    height: 85vh;
-  }
-  #lognBase{
-    margin-top: 10vh;
-  }
+  
 }
