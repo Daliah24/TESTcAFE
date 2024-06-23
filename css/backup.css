@@ -422,37 +422,77 @@ header .navbar{
 
 
 /*Ferry Code Starts here*/
-.lognInForm{
-  display: block;
-  color:var(--fifth-color);
-  flex-direction: column;
-  position: relative;
-  object-fit: contain;
-  position: relative;
+/* CSS for centering and styling the sign-up form */
+
+#signUp- {
+    padding-top: 14.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#signUpBase {
+    margin: auto;
+    width: 100%; /* Adjust based on preference */
+    max-width: 400px; /* Maximum width */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded corners */
 
 }
 
-#login{
-  height: 100vh;
-  width: 100vw;
+#signUpSize {
+    max-width: 400px; /* Maximum width of the form */
+    margin: auto; /* Center in the available space */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the form */
 }
-#logInBtn{
-  flex-direction: column;
-}
-#logo{
-    height: 20vh;
+
+.signUpForm {
+    display: flex;
     flex-direction: column;
-    width: 20%;
-    top:50rem;
-    left: 40%;
-    object-fit: contain;
 }
-#logInBase{
-  height: 50vh;
-  align-items: center;
-  justify-content: center;
-  margin-left: 30%;
+
+.signUpForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
+
+.signUpForm label {
+    margin-bottom: 5px;
+}
+
+.signUpForm input[type="text"],
+.signUpForm input[type="age"],
+.signUpForm input[type="birthDate"],
+.signUpForm input[type="password"],
+.signUpForm input[type="passwordConfirm"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Space between inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+#signUpBtn {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#signUpBtn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.signUpForm p {
+    text-align: center;
+}
+
+
+
 @media (max-width: 480px){
   #logInBtn{
     flex-direction: column;

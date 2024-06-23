@@ -432,19 +432,19 @@ header .navbar{
   }
 
 #signUpBase {
-  margin-top: auto;
-  width: 100%; /* Adjust based on preference */
-  max-width: 400px; /* Maximum width */
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  border-radius: 8px; /* Rounded corners */
+    margin: auto;
+    width: 100%; /* Adjust based on preference */
+    max-width: 400px; /* Maximum width */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+
 }
 
 #signUpSize {
     max-width: 400px; /* Maximum width of the form */
     margin: auto; /* Center in the available space */
-    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the form */
 }
 
@@ -526,4 +526,5 @@ header .navbar{
     object-fit: contain;
   }
 }
+
 
