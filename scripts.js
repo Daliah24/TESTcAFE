@@ -12,9 +12,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     item.addEventListener('click', (event) => {
       event.stopPropagation(); // Prevent event from propagating
       // Close the navbar menu when a menu item is clicked
-      nav.classList.remove('open');
+      nav.classList.toggle('open');
     });
   });
+});
+document.addEventListener('click', () => {
+  document.getElementById('menu-icon').classList.add('closed');
 });
 
 //Second Rate Shaboingery

@@ -440,11 +440,14 @@ header .navbar{
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   border-radius: 8px; /* Rounded corners */
+  background: #ebdbc8;
 }
 
 .logInForm {
   display: flex;
   flex-direction: column;
+  color: #bd944b;
+  text-align: center;
 }
 
 .logInForm input[type="text"],
@@ -457,13 +460,18 @@ header .navbar{
 }
 
 .logInForm input[type="submit"] {
-  background-color: #007bff; /* Bootstrap primary color */
-  color: white;
+  background-color: inherit; /* Bootstrap primary color */
+  color: #bd944b;
   cursor: pointer;
+  border: solid #bd944b;
+  border-radius: 12px;
+
 }
 
 .logInForm input[type="submit"]:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: var(--fifth-color); /* Darker shade on hover */
+  border: solid #bd944b;
+  
 }
 
 .logInForm a {
@@ -515,3 +523,4 @@ header .navbar{
   }
   
 }
+
