@@ -445,14 +445,16 @@ header .navbar{
 
 #signUpSize {
     max-width: 400px; /* Maximum width of the form */
-    margin: auto; /* Center in the available space */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the form */
+    margin: auto; /* Center in the available space *//* Soft shadow around the form */
 }
 
 .signUpForm {
     display: flex;
     flex-direction: column;
-    color: #bd944b;
+    color: black;
+}
+h2.signUpForm{
+  color: #bd944b;
 }
 
 .signUpForm h2 {
@@ -484,6 +486,7 @@ header .navbar{
     border: solid #bd944b;
     border-radius: 5px;
     cursor: pointer;
+    background: #ebdbc8;
 }
 
 #signUpBtn:hover {

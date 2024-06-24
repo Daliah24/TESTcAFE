@@ -446,10 +446,12 @@ header .navbar{
 .logInForm {
   display: flex;
   flex-direction: column;
-  color: #bd944b;
+  color: black;
   text-align: center;
 }
-
+#LogInText{
+  color: #bd944b;
+}
 .logInForm input[type="text"],
 .logInForm input[type="password"],
 .logInForm input[type="submit"] {
